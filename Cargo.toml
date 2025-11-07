@@ -1,0 +1,20 @@
+[package]
+name = "hash-finder"
+version = "0.1.0"
+edition = "2024"
+authors = ["Sergey Reminniy <Serge-Francois@yandex.ru>"]
+description = "A utility for searching for SHA-256 hashes with a specified number of 16-bit trailing zeros"
+readme = "README.md"
+homepage = "https://github.com/SergeFrancois/hash-finder"
+repository = "https://github.com/SergeFrancois/hash-finder"
+keywords = ["cli", "hash", "sha256"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "hash_finder"
+path = "src/main.rs"
+
+[dependencies]
+clap = {version = "4.5.51", features = ["derive"]}
+sha2 = "0.10.9"
+threadpool = "1.8.1"
