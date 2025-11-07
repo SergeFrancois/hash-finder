@@ -1,5 +1,6 @@
 # Hash finder
 It's a utility for searching for SHA-256 hashes with a specified number of 16-bit trailing zeros. It utilizes all processor cores for accelerated hash search.
+
 **Notes:**
 - The hash is calculated from an integer converted into a byte array using little-endian order.
 - Trailing zeros are zeros in the most significant bytes of the hash array.
